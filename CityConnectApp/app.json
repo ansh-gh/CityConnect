@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "CityConnectApp",
+    "slug": "CityConnectApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "cityconnectapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/images/logo.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#0F172A"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.CityConnectApp",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": {
+            "scheme": "tel"
+          }
+        }
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F172A",
+          "image": "./assets/images/logo.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "dark": {
+            "image": "./assets/images/logo.png",
+            "backgroundColor": "#0F172A"
+          }
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
